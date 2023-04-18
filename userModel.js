@@ -36,4 +36,77 @@ const Item = db.define("item",{
 
 })
 
-export default {User, Item}
+const Carrinho = db.define("carrinho",{
+//Arrumar
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+
+})
+//Arrumar
+const Fornecedor = db.define("fornecedor",{
+
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+
+})
+//Arrumar
+const Banner = db.define("banner",{
+
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+
+})
+
+//Arrumar
+const Cadastro = db.define("cadastro",{
+
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+
+})
+
+export default {User, Item, Carrinho, Fornecedor, Banner, Cadastro}
