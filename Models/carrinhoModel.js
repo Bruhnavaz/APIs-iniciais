@@ -12,10 +12,18 @@ const Carrinho = db.define("carrinho",{
             type: Sequelize.INTEGER,
             allowNull: false
         },
+        itens: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
         quantidade: {
             type: Sequelize.INTEGER,
             allowNull: false
-        },
+         },
+        quantidade: {
+            type: Sequelize.INTEGER,
+            allowNull: false
+           },
         endereco: {
             type: Sequelize.STRING,
             allowNull: true
