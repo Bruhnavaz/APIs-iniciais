@@ -3,7 +3,7 @@ import db from "./db.js"
 
 const Item = db.define("item",{
 
-    id: {
+    idItem: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true
@@ -13,6 +13,14 @@ const Item = db.define("item",{
         allowNull: false
     },
     quantidade: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+     validade: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+     cod: {
         type: Sequelize.INTEGER,
         allowNull: false
     }

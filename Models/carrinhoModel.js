@@ -2,19 +2,23 @@ import { Sequelize } from "sequelize"
 import db from "./db.js"
 
 const Carrinho = db.define("carrinho",{
-    //Arrumar
-        id: {
+    //Arrumar(forma de colocar cada item de forma individual e suas respectivas quantodades)
+        idCarrinho: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        name: {
-            type: Sequelize.STRING,
+        valor: {
+            type: Sequelize.INTEGER,
             allowNull: false
         },
-        email: {
-            type: Sequelize.STRING,
+        quantidade: {
+            type: Sequelize.INTEGER,
             allowNull: false
+        },
+        endereco: {
+            type: Sequelize.STRING,
+            allowNull: true
         }
     
     })
