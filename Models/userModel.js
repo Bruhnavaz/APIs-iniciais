@@ -8,14 +8,6 @@ const User = db.define("user",{
         autoIncrement: true,
         primaryKey: true
     },
-    cpf: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-    },
-    dataNascimento: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-    },
     name: {
         type: Sequelize.STRING,
         allowNull: false
