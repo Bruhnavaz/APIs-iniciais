@@ -9,11 +9,11 @@ const Banner = db.define("banner",{
         autoIncrement: true,
         primaryKey: true
     },
-    name: {
+    descricao: {
         type: Sequelize.STRING,
         allowNull: false
     },
-    email: {
+    imagem: {//imagem
         type: Sequelize.STRING,
         allowNull: false
     }
