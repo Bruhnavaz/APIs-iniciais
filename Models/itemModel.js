@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize"
-import db from "./db.js"
+import db from "../db.js"
 
 const Item = db.define("item",{
 
-    idItem: {
+    id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true

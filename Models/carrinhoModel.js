@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize"
-import db from "./db.js"
+import db from "../db.js"
 
 const Carrinho = db.define("carrinho",{
     //Arrumar(forma de colocar cada item de forma individual e suas respectivas quantodades)
-        idCarrinho: {
+        id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
             primaryKey: true
@@ -20,10 +20,6 @@ const Carrinho = db.define("carrinho",{
             type: Sequelize.INTEGER,
             allowNull: false
          },
-        quantidade: {
-            type: Sequelize.INTEGER,
-            allowNull: false
-           },
         endereco: {
             type: Sequelize.STRING,
             allowNull: true

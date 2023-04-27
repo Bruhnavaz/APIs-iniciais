@@ -1,6 +1,5 @@
-// import { where } from "sequelize";
-// import User from "../models/userModel.js";
-// import Item from "../models/userModel.js"
+ import { where } from "sequelize";
+ import Carrinho from "../Models/carrinhoModel.js"
 
 
 //carrinho

@@ -1,10 +1,10 @@
 import { Sequelize } from "sequelize"
-import db from "./db.js"
+import db from "../db.js"
 
 //Arrumar
 const Fornecedor = db.define("fornecedor",{
 
-    idFornecedor: {
+    id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true

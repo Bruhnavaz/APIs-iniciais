@@ -1,7 +1,6 @@
 import { Sequelize } from "sequelize"
-import db from "./db.js"
+import db from "../db.js"
 
-//Arrumar
 const Banner = db.define("banner",{
 
     id: {
