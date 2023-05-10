@@ -1,7 +1,6 @@
 import { Sequelize } from "sequelize"
 import db from "../db.js"
 
-//Arrumar
 const Fornecedor = db.define("fornecedor",{
 
     id: {
@@ -9,15 +8,36 @@ const Fornecedor = db.define("fornecedor",{
         autoIncrement: true,
         primaryKey: true
     },
-    name: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
     cnpj: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
+  
+    nome: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    rua: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    numero: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    bairro: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    cidade: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    estado: {
         type: Sequelize.STRING,
         allowNull: false
     }

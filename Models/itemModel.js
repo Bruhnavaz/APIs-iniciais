@@ -8,22 +8,39 @@ const Item = db.define("item",{
         autoIncrement: true,
         primaryKey: true
     },
-    name: {
+    cod: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    nomeProduto: {
         type: Sequelize.STRING,
+        allowNull: false
+    },
+    valor: {
+        type: Sequelize.INTEGER,
         allowNull: false
     },
     quantidade: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-     validade: {
+     cnpjFornecedor: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-     cod: {
-        type: Sequelize.INTEGER,
+    tipoProduto: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    unidadeMedida: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    publico: {
+        type: Sequelize.STRING,
         allowNull: false
     }
-
+  
 })
+
 export default Item
