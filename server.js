@@ -1,5 +1,5 @@
 import express from 'express'
-//import cors from 'cors'
+import cors from 'cors'
 import db from './db.js'
 import userRouter from './Routes/userRoutes.js'
 import itemRouter from './Routes/itemRoutes.js'
@@ -11,7 +11,7 @@ const app = express()
 const port = process.env.port || 3000;
 
 app.use(express.json())
-//app.use(cors())
+app.use(cors())
 
 db.sync(() => console.log('Banco de dados preparado'))
 
