@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize"
 import db from "../db.js"
 
 const Carrinho = db.define("carrinho",{
-    //Arrumar(forma de colocar cada item de forma individual e suas respectivas quantodades)
+    
         id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,

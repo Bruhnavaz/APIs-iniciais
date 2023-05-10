@@ -12,10 +12,11 @@ const Banner = db.define("banner",{
         type: Sequelize.STRING,
         allowNull: false
     },
-    imagem: {//imagem
+    imagem: {
         type: Sequelize.STRING,
         allowNull: false
     }
 
 })
+
 export default Banner
