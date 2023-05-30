@@ -9,7 +9,7 @@ const User = db.define("user",{
         primaryKey: true
     },
     cpf: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false
     },
     nome: {
@@ -25,7 +25,7 @@ const User = db.define("user",{
         allowNull: false
     },
     numero: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false
     },
     bairro: {
