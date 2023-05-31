@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize"
 import db from "../db.js"
 
-const Item = db.define("item",{
+const Produto = db.define("produto",{
 
     id: {
         type: Sequelize.INTEGER,
@@ -43,4 +43,4 @@ const Item = db.define("item",{
   
 })
 
-export default Item
+export default Produto
