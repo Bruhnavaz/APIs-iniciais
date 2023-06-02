@@ -20,8 +20,11 @@
   "homepage": "https://github.com/Bruhnavaz/APIs-iniciais#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.1.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.31.0",
     "sqlite3": "^5.1.6"
   },
